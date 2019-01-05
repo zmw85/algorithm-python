@@ -102,26 +102,25 @@ def depthfirst_postorder_stack(root):
         return result
 
     stack = []
-    node = root
-
     while True:
-        while node:
-            if node.right:
-                stack.append(node.right)
-            stack.append(node)
-            node = node.left
+        while root:
+            if root.right:
+                stack.append(root.right)
+            stack.append(root)
+            root = root.left
 
-        node = stack.pop()
+        print(stack[-1].val)
+        root = stack.pop()
 
-        if node.right and len(stack) and node.right == stack[-1]:
+        if root.right and len(stack) and root.right == stack[-1]:
             stack.pop()
-            stack.append(node)
-            node = node.right
+            stack.append(root)
+            root = root.right
         else:
-            result.append(node.val)
-            node = None
+            result.append(root.val)
+            root = None
 
-        if not len(stack):
+        if len(stack) <= 0:
             break
 
     return result
