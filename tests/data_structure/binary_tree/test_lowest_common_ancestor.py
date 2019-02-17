@@ -1,5 +1,5 @@
-from node import Node
-import lowest_common_ancestor
+from src.data_structure.binary_tree.node import Node
+from src.data_structure.binary_tree import lowest_common_ancestor
 import pytest
 
 root = Node(3)

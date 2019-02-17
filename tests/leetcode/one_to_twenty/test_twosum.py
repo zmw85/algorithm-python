@@ -1,4 +1,4 @@
-import twosum
+from src.leetcode.one_to_twenty import twosum
 import pytest
 
 twosum_tests = [

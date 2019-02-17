@@ -1,5 +1,5 @@
-from node import Node
-import symmetric
+from src.data_structure.binary_tree.node import Node
+from src.data_structure.binary_tree import symmetric
 import pytest
 
 root_a = Node(1)

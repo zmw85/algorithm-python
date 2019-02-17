@@ -1,4 +1,4 @@
-import longest_substring as ls
+from src.leetcode.one_to_twenty import longest_substring as ls
 import pytest
 
 tests = [

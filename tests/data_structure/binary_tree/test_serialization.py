@@ -1,5 +1,5 @@
-from node import Node
-import serialization
+from src.data_structure.binary_tree.node import Node
+from src.data_structure.binary_tree import serialization
 
 root = Node(3)
 root.left = Node(5)

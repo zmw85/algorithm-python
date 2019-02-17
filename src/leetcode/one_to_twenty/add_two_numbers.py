@@ -1,4 +1,4 @@
-from link_list import ListNode
+from src.data_structure.binary_tree.link_list import ListNode
 
 
 def solution_1(l1, l2):

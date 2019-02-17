@@ -1,5 +1,7 @@
-from node import Node
-import construct_tree
+from src.data_structure.binary_tree.node import Node
+from src.data_structure.binary_tree import construct_tree
+from src.data_structure.binary_tree import serialization
+import random
 import pytest
 
 root = Node(1)
@@ -27,3 +29,16 @@ def test_construct_inorder_postorder():
 def test_construct_inorder_preorder():
     assert construct_tree.construct_inorder_preorder(
         inOrderResult, preOrderResult) == root
+
+
+test_data = [
+    [None, None],
+    [[], None],
+    # [random.shuffle(inOrderResult.copy()), inOrderResult],
+    # [random.shuffle(inOrderResult.copy()), inOrderResult]
+]
+
+
+@pytest.mark.parametrize('root,expected', test_data)
+def test_construct_inorder_random(root, expected):
+    assert construct_tree.construct_inorder_random(root) == expected

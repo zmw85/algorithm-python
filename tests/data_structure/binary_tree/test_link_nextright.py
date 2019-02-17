@@ -1,5 +1,5 @@
-from node import TreeLinkNode
-import link_nextright
+from src.data_structure.binary_tree.node import TreeLinkNode
+from src.data_structure.binary_tree import link_nextright
 
 root = TreeLinkNode(1)
 root.left = TreeLinkNode(2)

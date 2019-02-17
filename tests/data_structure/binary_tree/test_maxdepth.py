@@ -1,5 +1,5 @@
-import maxdepth
-from node import Node
+from src.data_structure.binary_tree import maxdepth
+from src.data_structure.binary_tree.node import Node
 
 root = Node(1)
 root.left = Node(2)

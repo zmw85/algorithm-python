@@ -1,5 +1,5 @@
-from node import Node
-import pathsum
+from src.data_structure.binary_tree.node import Node
+from src.data_structure.binary_tree import pathsum
 import pytest
 
 root_a = Node(1)
